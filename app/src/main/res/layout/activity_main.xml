@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/equipo1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:id="@+id/nombreEquipo1"
+            android:text="@string/nombreEquipo1"
+            style="@style/TeamText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            />
+
+        <ImageButton
+            android:id="@+id/botonRestar1"
+            android:layout_width="@dimen/tamañoBotones"
+            android:layout_height="@dimen/tamañoBotones"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="false"
+            android:onClick="decrementar"
+            style="@style/MinusButtons"
+
+            />
+
+        <TextView
+            android:id="@+id/goles1"
+            style="@style/ScoreText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingTop="15dp"
+            android:text="0"
+            android:textAlignment="center" />
+
+        <ImageButton
+            android:id="@+id/botonSumar1"
+            android:layout_width="@dimen/tamañoBotones"
+            android:layout_height="@dimen/tamañoBotones"
+            android:onClick="incrementar"
+
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            style="@style/PlusButtons"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/equipo2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:id="@+id/nombreEquipo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/nombreEquipo2"
+            style="@style/TeamText"/>
+
+        <ImageButton
+            android:id="@+id/botonRestar2"
+            android:layout_width="@dimen/tamañoBotones"
+            android:layout_height="@dimen/tamañoBotones"
+            android:layout_centerVertical="true"
+            android:onClick="decrementar2"
+            style="@style/MinusButtons"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+
+        <TextView
+            android:id="@+id/goles2"
+            style="@style/ScoreText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingTop="15dp"
+            android:text="0" />
+
+        <ImageButton
+            android:id="@+id/botonSumar2"
+            android:layout_width="@dimen/tamañoBotones"
+            android:layout_height="@dimen/tamañoBotones"
+            android:layout_alignParentRight="true"
+            android:onClick="incrementar2"
+            android:layout_centerVertical="true"
+            style="@style/PlusButtons"
+            />
+    </RelativeLayout>
+</LinearLayout>
